@@ -1,0 +1,20 @@
+{
+  "name": "Speechify",
+  "description": "Speechify is a TTS Chrome extension it's usuful for users with visual impairments, language learners, or those who prefer listening over reading. ",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": ["contextMenus", "tts"],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "background.js"
+  },
+
+  "icons": {
+    "16": "images/icon16.png"
+  },
+
+  "action": {
+    "default_popup": "html.html",
+    "default_icon": "images/icon16.png"
+  }
+}
